@@ -1,0 +1,64 @@
+<div class="form-group">
+  <%= f.label :name, class: "col-sm-2 control-label" %>
+  <div class="col-sm-6">
+   <%= f.text_field :name, placeholder: "Name", class: "form-control" %>
+  </div>      
+</div>
+
+<div class="form-group">
+  <%= f.label :address1, class: "col-sm-2 control-label" %>
+    <div class="col-sm-6">
+      <%= f.text_field :address1, placeholder: "Email", class: "form-control" %>
+    </div>
+</div>
+
+<div class="form-group">
+  <%= f.label :address2, class: "col-sm-2 control-label" %>
+    <div class="col-sm-6">
+      <%= f.text_field :address2, placeholder: "Contact number", class: "form-control" %>
+    </div>
+</div>
+
+<div class="form-group">
+  <%= f.label :city, class: "col-sm-2 control-label" %>
+    <div class="col-sm-6">
+      <%= f.text_field :city, placeholder: "Description", class: "form-control" %>
+    </div>
+</div>
+
+<div class="form-group">
+  <%= f.label :state, class: "col-sm-2 control-label" %>
+    <div class="col-sm-6">
+      <%= f.text_field :state, placeholder: "Description", class: "form-control" %>
+    </div>
+</div>
+
+<div class="form-group">
+  <%= f.label :country, class: "col-sm-2 control-label" %>
+    <div class="col-sm-6">
+      <%= f.text_field :country, placeholder: "Description", class: "form-control" %>
+    </div>
+</div>
+
+<div class="form-group">
+  <%= f.label :Zip, class: "col-sm-2 control-label" %>
+    <div class="col-sm-6">
+      <%= f.text_field :zip, placeholder: "Description", class: "form-control" %>
+    </div>
+</div>
+
+
+<%= f.fields_for :staffs do |ff| %>
+  <div class="form-group">
+    <%= ff.label :email, class: "col-sm-2 control-label" %>
+    <div class="col-sm-6">
+      <%= ff.text_field :email, placeholder: "Street1", class: "form-control" %>
+      </div>
+  </div>
+  <div class="form-group">
+    <%= ff.label :primary_pnumber, class: "col-sm-2 control-label" %>
+    <div class="col-sm-6">
+      <%= ff.text_field :primary_pnumber, placeholder: "Street2", class: "form-control" %>
+    </div>
+  </div>
+<% end %> 
